@@ -4,7 +4,7 @@ export const Contact = () => {
 
     let datas = [
         {
-            tittle: "Intagram",
+            tittle: "Instagram",
             image: "https://i.pinimg.com/564x/a2/4c/cc/a24ccc83bec854a87cc133fd52eb9161.jpg",
             nickname: "Leyla707"
         },
@@ -23,9 +23,11 @@ export const Contact = () => {
   return (
     <div>
         <h2>Contact me</h2>
+        <div className="container">
         {datas.map(data=>(
             <Links info={data} key={data.tittle}/>
         ))}
+        </div>
     </div>
   )
 }

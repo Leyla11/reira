@@ -24,9 +24,11 @@ export const About = () => {
     return (
         <div>
             <h2>More from me</h2>
+            <div className="container">
             {datas.map(data=>(
                 <Description info={data} key={data.tittle}/>
             ))}
+            </div>
         </div>
     )
 }
