@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.navbar {
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar>ol {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar>ol>li {
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar>ol>li>a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+.navbar>ol>li>a:hover {
+    color: #6C0031;
+    font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    color: #6C0031;
+    font-size: 50px;
+}
+
+.principal>img {
+    width: 45%;
+    height: 45%;
+}
+
+h2 {
+    text-align: center;
+    color:#6C0031;
+    background-color: #000;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #000;
+    align-items: center;
+    width: 30%;
+}
+
+h3 {
+   color: aliceblue;
+   text-align: center;
+   font-size: 25px; 
+}
+
+.description>img {
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+}
+
+.description>p {
+    color: aliceblue;
+    padding: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #000;
+    align-items: center;
+    width: 30%;
+}
+
+.links>img {
+    width: 25%;
+    height: 25%;
+    padding: 30px;
+}
+
+.links>img:hover {
+    width: 30%;
+    height: 30%;
+}
+
+.links>p {
+    color: aliceblue;
 }
